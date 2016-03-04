@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D794BDAB895D8184889ACFD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE735201D7E28B0231527800 /* libPods.a */; };
+		AE5C08D31C890BB200B8C660 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C08D11C890BB200B8C660 /* SwiftyJSON.framework */; };
+		AE5C08D41C890BB200B8C660 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C08D21C890BB200B8C660 /* ObjectMapper.framework */; };
+		AE5C08D71C890E7300B8C660 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C08D61C890E7300B8C660 /* User.swift */; };
+		AECEBDF61C88A3FA00B9A4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEBDF51C88A3FA00B9A4F8 /* AppDelegate.swift */; };
+		AECEBDF81C88A3FA00B9A4F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEBDF71C88A3FA00B9A4F8 /* ViewController.swift */; };
+		AECEBDFB1C88A3FA00B9A4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEBDF91C88A3FA00B9A4F8 /* Main.storyboard */; };
+		AECEBDFD1C88A3FA00B9A4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AECEBDFC1C88A3FA00B9A4F8 /* Assets.xcassets */; };
+		AECEBE001C88A3FA00B9A4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECEBDFE1C88A3FA00B9A4F8 /* LaunchScreen.storyboard */; };
+		AECEBE0B1C88A3FA00B9A4F8 /* TelcelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEBE0A1C88A3FA00B9A4F8 /* TelcelTests.swift */; };
+		AECEBE161C88A3FA00B9A4F8 /* TelcelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEBE151C88A3FA00B9A4F8 /* TelcelUITests.swift */; };
+		AECEBE251C88B0FB00B9A4F8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECEBE241C88B0FB00B9A4F8 /* APIManager.swift */; };
+		AEE6001D1C88F78D00655014 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6001C1C88F78D00655014 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AECEBE071C88A3FA00B9A4F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECEBDEA1C88A3F900B9A4F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECEBDF11C88A3FA00B9A4F8;
+			remoteInfo = Telcel;
+		};
+		AECEBE121C88A3FA00B9A4F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECEBDEA1C88A3F900B9A4F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECEBDF11C88A3FA00B9A4F8;
+			remoteInfo = Telcel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19DA5A652A3CD33C68BFCBE0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AE5C08D11C890BB200B8C660 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		AE5C08D21C890BB200B8C660 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		AE5C08D61C890E7300B8C660 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AECEBDF21C88A3FA00B9A4F8 /* Telcel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telcel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEBDF51C88A3FA00B9A4F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AECEBDF71C88A3FA00B9A4F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AECEBDFA1C88A3FA00B9A4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AECEBDFC1C88A3FA00B9A4F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AECEBDFF1C88A3FA00B9A4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AECEBE011C88A3FA00B9A4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEBE061C88A3FA00B9A4F8 /* TelcelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelcelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEBE0A1C88A3FA00B9A4F8 /* TelcelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelcelTests.swift; sourceTree = "<group>"; };
+		AECEBE0C1C88A3FA00B9A4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEBE111C88A3FA00B9A4F8 /* TelcelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelcelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECEBE151C88A3FA00B9A4F8 /* TelcelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelcelUITests.swift; sourceTree = "<group>"; };
+		AECEBE171C88A3FA00B9A4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEBE241C88B0FB00B9A4F8 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AECEBE2B1C88CCC500B9A4F8 /* Telcel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Telcel-Bridging-Header.h"; sourceTree = "<group>"; };
+		AEE6001C1C88F78D00655014 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B3F93080D52F8AD9084889D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EE735201D7E28B0231527800 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECEBDEF1C88A3FA00B9A4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5C08D31C890BB200B8C660 /* SwiftyJSON.framework in Frameworks */,
+				AE5C08D41C890BB200B8C660 /* ObjectMapper.framework in Frameworks */,
+				AEE6001D1C88F78D00655014 /* Alamofire.framework in Frameworks */,
+				7D794BDAB895D8184889ACFD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE031C88A3FA00B9A4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE0E1C88A3FA00B9A4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3F7AA18E2F05CD33F52FD46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C08D11C890BB200B8C660 /* SwiftyJSON.framework */,
+				AE5C08D21C890BB200B8C660 /* ObjectMapper.framework */,
+				AEE6001C1C88F78D00655014 /* Alamofire.framework */,
+				EE735201D7E28B0231527800 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE5C08D51C890E6100B8C660 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C08D61C890E7300B8C660 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AECEBDE91C88A3F900B9A4F8 = {
+			isa = PBXGroup;
+			children = (
+				AECEBDF41C88A3FA00B9A4F8 /* Telcel */,
+				AECEBE091C88A3FA00B9A4F8 /* TelcelTests */,
+				AECEBE141C88A3FA00B9A4F8 /* TelcelUITests */,
+				AECEBDF31C88A3FA00B9A4F8 /* Products */,
+				EB9309AAE38AB733603BBC98 /* Pods */,
+				A3F7AA18E2F05CD33F52FD46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AECEBDF31C88A3FA00B9A4F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECEBDF21C88A3FA00B9A4F8 /* Telcel.app */,
+				AECEBE061C88A3FA00B9A4F8 /* TelcelTests.xctest */,
+				AECEBE111C88A3FA00B9A4F8 /* TelcelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECEBDF41C88A3FA00B9A4F8 /* Telcel */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C08D51C890E6100B8C660 /* Models */,
+				AECEBE231C88B0AC00B9A4F8 /* Backend */,
+				AECEBDF71C88A3FA00B9A4F8 /* ViewController.swift */,
+				AECEBDF51C88A3FA00B9A4F8 /* AppDelegate.swift */,
+				AECEBDF91C88A3FA00B9A4F8 /* Main.storyboard */,
+				AECEBDFC1C88A3FA00B9A4F8 /* Assets.xcassets */,
+				AECEBDFE1C88A3FA00B9A4F8 /* LaunchScreen.storyboard */,
+				AECEBE011C88A3FA00B9A4F8 /* Info.plist */,
+				AECEBE2B1C88CCC500B9A4F8 /* Telcel-Bridging-Header.h */,
+			);
+			path = Telcel;
+			sourceTree = "<group>";
+		};
+		AECEBE091C88A3FA00B9A4F8 /* TelcelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AECEBE0A1C88A3FA00B9A4F8 /* TelcelTests.swift */,
+				AECEBE0C1C88A3FA00B9A4F8 /* Info.plist */,
+			);
+			path = TelcelTests;
+			sourceTree = "<group>";
+		};
+		AECEBE141C88A3FA00B9A4F8 /* TelcelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AECEBE151C88A3FA00B9A4F8 /* TelcelUITests.swift */,
+				AECEBE171C88A3FA00B9A4F8 /* Info.plist */,
+			);
+			path = TelcelUITests;
+			sourceTree = "<group>";
+		};
+		AECEBE231C88B0AC00B9A4F8 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				AECEBE241C88B0FB00B9A4F8 /* APIManager.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		EB9309AAE38AB733603BBC98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F93080D52F8AD9084889D7 /* Pods.debug.xcconfig */,
+				19DA5A652A3CD33C68BFCBE0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECEBDF11C88A3FA00B9A4F8 /* Telcel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECEBE1A1C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "Telcel" */;
+			buildPhases = (
+				B25A2E295FC458BC218A30D9 /* Check Pods Manifest.lock */,
+				AECEBDEE1C88A3FA00B9A4F8 /* Sources */,
+				AECEBDEF1C88A3FA00B9A4F8 /* Frameworks */,
+				AECEBDF01C88A3FA00B9A4F8 /* Resources */,
+				629FB152FE3C229B87D6ED8B /* Embed Pods Frameworks */,
+				3EDF6C660A86D4BDA11C0AAE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Telcel;
+			productName = Telcel;
+			productReference = AECEBDF21C88A3FA00B9A4F8 /* Telcel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AECEBE051C88A3FA00B9A4F8 /* TelcelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECEBE1D1C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "TelcelTests" */;
+			buildPhases = (
+				AECEBE021C88A3FA00B9A4F8 /* Sources */,
+				AECEBE031C88A3FA00B9A4F8 /* Frameworks */,
+				AECEBE041C88A3FA00B9A4F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECEBE081C88A3FA00B9A4F8 /* PBXTargetDependency */,
+			);
+			name = TelcelTests;
+			productName = TelcelTests;
+			productReference = AECEBE061C88A3FA00B9A4F8 /* TelcelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AECEBE101C88A3FA00B9A4F8 /* TelcelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECEBE201C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "TelcelUITests" */;
+			buildPhases = (
+				AECEBE0D1C88A3FA00B9A4F8 /* Sources */,
+				AECEBE0E1C88A3FA00B9A4F8 /* Frameworks */,
+				AECEBE0F1C88A3FA00B9A4F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECEBE131C88A3FA00B9A4F8 /* PBXTargetDependency */,
+			);
+			name = TelcelUITests;
+			productName = TelcelUITests;
+			productReference = AECEBE111C88A3FA00B9A4F8 /* TelcelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECEBDEA1C88A3F900B9A4F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = onikom;
+				TargetAttributes = {
+					AECEBDF11C88A3FA00B9A4F8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AECEBE051C88A3FA00B9A4F8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AECEBDF11C88A3FA00B9A4F8;
+					};
+					AECEBE101C88A3FA00B9A4F8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AECEBDF11C88A3FA00B9A4F8;
+					};
+				};
+			};
+			buildConfigurationList = AECEBDED1C88A3F900B9A4F8 /* Build configuration list for PBXProject "Telcel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AECEBDE91C88A3F900B9A4F8;
+			productRefGroup = AECEBDF31C88A3FA00B9A4F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECEBDF11C88A3FA00B9A4F8 /* Telcel */,
+				AECEBE051C88A3FA00B9A4F8 /* TelcelTests */,
+				AECEBE101C88A3FA00B9A4F8 /* TelcelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECEBDF01C88A3FA00B9A4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEBE001C88A3FA00B9A4F8 /* LaunchScreen.storyboard in Resources */,
+				AECEBDFD1C88A3FA00B9A4F8 /* Assets.xcassets in Resources */,
+				AECEBDFB1C88A3FA00B9A4F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE041C88A3FA00B9A4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE0F1C88A3FA00B9A4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EDF6C660A86D4BDA11C0AAE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		629FB152FE3C229B87D6ED8B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25A2E295FC458BC218A30D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECEBDEE1C88A3FA00B9A4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5C08D71C890E7300B8C660 /* User.swift in Sources */,
+				AECEBE251C88B0FB00B9A4F8 /* APIManager.swift in Sources */,
+				AECEBDF81C88A3FA00B9A4F8 /* ViewController.swift in Sources */,
+				AECEBDF61C88A3FA00B9A4F8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE021C88A3FA00B9A4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEBE0B1C88A3FA00B9A4F8 /* TelcelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECEBE0D1C88A3FA00B9A4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECEBE161C88A3FA00B9A4F8 /* TelcelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AECEBE081C88A3FA00B9A4F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECEBDF11C88A3FA00B9A4F8 /* Telcel */;
+			targetProxy = AECEBE071C88A3FA00B9A4F8 /* PBXContainerItemProxy */;
+		};
+		AECEBE131C88A3FA00B9A4F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECEBDF11C88A3FA00B9A4F8 /* Telcel */;
+			targetProxy = AECEBE121C88A3FA00B9A4F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AECEBDF91C88A3FA00B9A4F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECEBDFA1C88A3FA00B9A4F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AECEBDFE1C88A3FA00B9A4F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECEBDFF1C88A3FA00B9A4F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECEBE181C88A3FA00B9A4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AECEBE191C88A3FA00B9A4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECEBE1B1C88A3FA00B9A4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F93080D52F8AD9084889D7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Telcel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.Telcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Telcel/Telcel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AECEBE1C1C88A3FA00B9A4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DA5A652A3CD33C68BFCBE0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Telcel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.Telcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Telcel/Telcel-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AECEBE1E1C88A3FA00B9A4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelcelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.TelcelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telcel.app/Telcel";
+			};
+			name = Debug;
+		};
+		AECEBE1F1C88A3FA00B9A4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelcelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.TelcelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telcel.app/Telcel";
+			};
+			name = Release;
+		};
+		AECEBE211C88A3FA00B9A4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelcelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.TelcelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Telcel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AECEBE221C88A3FA00B9A4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelcelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = onikom.TelcelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Telcel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECEBDED1C88A3F900B9A4F8 /* Build configuration list for PBXProject "Telcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEBE181C88A3FA00B9A4F8 /* Debug */,
+				AECEBE191C88A3FA00B9A4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECEBE1A1C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "Telcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEBE1B1C88A3FA00B9A4F8 /* Debug */,
+				AECEBE1C1C88A3FA00B9A4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECEBE1D1C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "TelcelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEBE1E1C88A3FA00B9A4F8 /* Debug */,
+				AECEBE1F1C88A3FA00B9A4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECEBE201C88A3FA00B9A4F8 /* Build configuration list for PBXNativeTarget "TelcelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECEBE211C88A3FA00B9A4F8 /* Debug */,
+				AECEBE221C88A3FA00B9A4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECEBDEA1C88A3F900B9A4F8 /* Project object */;
+}

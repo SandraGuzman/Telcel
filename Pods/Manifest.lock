@@ -1,0 +1,10 @@
+PODS:
+  - APFlatSlideControl (0.0.3)
+
+DEPENDENCIES:
+  - APFlatSlideControl
+
+SPEC CHECKSUMS:
+  APFlatSlideControl: 54f4e7ccef943fac13a4360c4ac7d48dbfd8b42c
+
+COCOAPODS: 0.39.0
